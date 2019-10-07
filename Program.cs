@@ -15,8 +15,11 @@ namespace StockApp
     {
         static void Main(string[] args)
         {
-            StockAppCalculator transaction = new StockAppCalculator();
             string inputValue;
+            string name;
+            double sharesBought;
+            double priceBought;
+            double priceSold;
             WriteLine("*******************************************************");
             WriteLine("        Stock Transactions");
             WriteLine("        Calculate results of stock bought and sold");
@@ -29,21 +32,21 @@ namespace StockApp
             WriteLine("*******************************************************");
             WriteLine("*******************************");
             Write("Enter stock name: ");
-            WriteLine(transaction.StockName);
-            // inputValue = ReadLine();
-            // transaction.StockName.set(inputValue);
+            name = ReadLine();
             Write("Enter shares bought: ");
-            WriteLine(transaction.StockSharesBought);
-            // inputValue = ReadLine();
-            // transaction.SharesBought.set(double.Parse(inputValue));
+            inputValue = ReadLine();
+            sharesBought = double.Parse(inputValue);
             Write("Enter price bought: ");
-            WriteLine(transaction.StockPriceBought);
-            // inputValue = ReadLine();
-            // transaction.PriceBought.set(double.Parse(inputValue));
+            inputValue = ReadLine();
+            priceBought = double.Parse(inputValue);
             Write("Enter price sold: ");
-            WriteLine(transaction.StockPriceSold);
-            // inputValue = ReadLine();
-            // transaction.PriceSold.set(double.Parse(inputValue));
+            inputValue = ReadLine();
+            priceSold = double.Parse(inputValue);
+
+            // instantiate transaction object by calling StockAppCalculator constructor method
+            StockAppCalculator transaction = new StockAppCalculator(name, sharesBought, priceBought, priceSold);
+
+            // output the results of our method calculations
             WriteLine("*******************************");
             Write("        ");
             WriteLine(transaction.StockName);
@@ -53,7 +56,6 @@ namespace StockApp
             WriteLine("{0:C}", transaction.Sell());
             Write("Difference       ");
             WriteLine("{0:C}", transaction.Difference());
-            ReadLine();
         }
     }
 }
