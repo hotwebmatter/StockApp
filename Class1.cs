@@ -33,7 +33,7 @@ namespace StockApp
             stockPriceSold = priceSold;
         }
 
-        //Properties
+        //Properties with accessors and mutators
         public string StockName
         {
             get
