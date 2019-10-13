@@ -1,7 +1,7 @@
 # StockApp
 Sixth C# assignment submitted via Blackboard.
 
-I stuck very closely to the assignment, and didn't include any bonus creative stuff this time.
+I stuck very closely to the assignment this time, and didn't include any bonus creative stuff.
 
 ## Example output
 ```
