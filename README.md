@@ -1,6 +1,8 @@
 # StockApp
 Sixth C# assignment submitted via Blackboard.
 
+Actually assigned by professor, not just based on exercise in textbook.
+
 I stuck very closely to the assignment this time, and didn't include any bonus creative stuff.
 
 ## Example output
